@@ -1,0 +1,29 @@
+Test
+
+* Title of slide or section (must have asterisk)
+
+Some Text
+
+** Subsection
+
+- bullets
+- more bullets
+- a bullet with
+
+* Slide1
+
+Some More text
+
+  Preformatted text
+  is indented (however you like)
+
+Further Text, including invocations like:
+
+.link http://foo label
+
+* Slide 2
+
+.play go-docs/test.go /START1/,/STOP1/
+
+
+Again, more text
