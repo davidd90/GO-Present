@@ -1,6 +1,5 @@
 Go-lang
 
-.html http://golang.org/doc/gopher/appenginegophercolor.jpg
 
 * Title of slide or section (must have asterisk)
 
@@ -29,3 +28,7 @@ Further Text, including invocations like:
 
 
 Again, more text
+
+* Slide 3
+
+.html http://golang.org/doc/gopher/appenginegophercolor.jpg
