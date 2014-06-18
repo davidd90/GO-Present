@@ -1,5 +1,6 @@
 Go-lang
 
+.image resources/appenginegophercolor.jpg 100 200
 
 * Title of slide or section (must have asterisk)
 
@@ -31,4 +32,4 @@ Again, more text
 
 * Slide 3
 
-.image resources/appenginegophercolor.jpg 100 200
+
