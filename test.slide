@@ -31,4 +31,4 @@ Again, more text
 
 * Slide 3
 
-.image http://golang.org/doc/gopher/appenginegophercolor.jpg
+.image http://golang.org/doc/gopher/appenginegophercolor.jpg 100 200
