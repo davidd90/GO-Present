@@ -1,5 +1,7 @@
 Go-lang
 
+.image resources/gopher.png
+
 * Title of slide or section (must have asterisk)
 
 Some Text
@@ -31,5 +33,10 @@ Further Text, including invocations like:
 Again, more text
 
 * Slide 3
+
+*** another test
+
+.image resources/golang-gopher-figurine.jpeg
+
 
 
