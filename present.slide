@@ -7,15 +7,15 @@ Michal Ajchman
 
 * Gliederung
 
-	1. Geschichte
-	2. Syntax und Semantik
-	 2.1 Datentypen
-	 2.2 Wichtigste Paradigmen
-	 2.3 Vergleich mit C
-	3. Anwendungsbeispiele
-	4. Verbreitung
-	5. Bewertung
-	6. Ausblick
+1. Geschichte
+2. Syntax und Semantik
+ 2.1 Datentypen
+ 2.2 Wichtigste Paradigmen
+ 2.3 Vergleich mit C
+3. Anwendungsbeispiele
+4. Verbreitung
+5. Bewertung
+6. Ausblick
 
 * Geschichte von Go
 
@@ -26,14 +26,16 @@ Michal Ajchman
 Go enstand aus der Frust über aktuell benutzte Sprachen zur Systemprogrammierung
 
 Die Hauptsächlichen Problemen:
-- C und C++ sind veraltet
-- in den letzten 10 Jahren keine andere Sprache für Systementwicklung
+- C und C++ sind _veraltet_
+- in den letzten 10 Jahren _keine_andere_Sprache für Systementwicklung
 
-Lösung: eine neue Sprache mit folgenden Eigenschaften:
+*Lösung:* eine neue Sprache soll entwickelt werden
+
+Sie soll:
 - schnell in der Ausführung und Kompilierung
 - einfach
 - hardwarenah
-- mit Unterstützung für moderne Konzepte
+- moderne Konzepte unterstützen
 
 * Sytax und Semantik
 
