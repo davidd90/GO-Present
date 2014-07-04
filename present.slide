@@ -1,0 +1,41 @@
+Die Programmiersprache Go
+17 Juli 2014
+
+David Damm
+
+Michal Ajchman
+
+* Gliederung
+
+	1. Geschichte
+	2. Syntax und Semantik
+	 2.1 Datentypen
+	 2.2 Wichtigste Paradigmen
+	 2.3 Vergleich mit C
+	3. Anwendungsbeispiele
+	4. Verbreitung
+	5. Bewertung
+	6. Ausblick
+
+* Geschichte von Go
+
+*TODO*
+
+* Wieso eine neue Sprache?
+
+Go enstand aus der Frust über aktuell benutzte Sprachen zur Systemprogrammierung
+
+Die Hauptsächlichen Problemen:
+- C und C++ sind veraltet
+- in den letzten 10 Jahren keine andere Sprache für Systementwicklung
+
+Lösung: eine neue Sprache mit folgenden Eigenschaften:
+- schnell in der Ausführung und Kompilierung
+- einfach
+- hardwarenah
+- mit Unterstützung für moderne Konzepte
+
+* Sytax und Semantik
+
+*TODO*
+
