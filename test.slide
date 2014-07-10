@@ -32,9 +32,9 @@ Further Text, including invocations like:
 
 Again, more text
 
-* Slide 3
-
-*** another test
+* Go
+** Datentypen
+*** primitive Datentypen
 
 .image resources/golang-gopher-figurine.jpeg
 
