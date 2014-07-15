@@ -17,6 +17,8 @@ Michal Ajchman
 
 * Geschichte von Go
 
+* Geschichte von Go
+
 *TODO*
 
 * Wieso eine neue Sprache?
@@ -36,6 +38,8 @@ Ziele für die Sprache:
 - einfach
 - hardwarenah
 - Unterstützung moderner Konzepte
+
+* Syntax und Semantik
 
 * Syntax und Semantik - Einführung
 
@@ -86,7 +90,7 @@ Variablendeklaration sieht wie folgt aus:
 - Typangabe auch nicht nötig
 - *Aber:* nur innerhalb von Funktionen erlaubt
 
-_Konstanten_
+*Konstanten*
 
 - fangen mit Schlüsselwort _const_ an
 - nur vom Typ _bool_,_numerisch_ oder _string_
@@ -151,7 +155,114 @@ _Konstanten_
 
 *TODO*
 
-* Syntax und Semantik - Channels und goroutines
+* Syntax und Semantik - channels und goroutines
+
+Prinzip für paralleles Programmieren:
 
 _"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."_
 
+- es gibt low-level Befehle zum Sperren und Entsperren von gemeinsam genutzten Daten
+- *Aber*: diese sollen nur in hardwarenahen Programmen benutzt werden
+- für gewöhnliche Prozesssynchronisation implementiert Go das sog. _message_passing_modell_
+
+*goroutines*
+
+- Teile des Programms, welche parallel ausgeführt werden
+- sind nicht gleich Threads, eine goroutine wird aber auf 1 bis n Threads abgebildet
+- durch internen Scheduler verwaltet
+
+* Syntax und Semantik - goroutines
+
+- goroutines sind _sehr_leichgewichtig_ und _billig_ zu erstellen
+- _hunderttausende_ gleichzeitig aktive goroutines nicht ungewöhnlich
+- administriert durch die Laufzeitumgebung
+- laufen alle im _selben_Speicherbereich_
+- implementiert als eine _Methode_
+- gestartet mit dem Befehl _go_
+
+*Beispiel*
+
+ go summe(großesArray)
+
+- Nachrichtenaustausch zw. goroutines mit Hilfe von _channels_
+
+* Syntax und Semantik - Channels
+
+- ein _Kommunikationskanal_ zw. goroutines
+- übertragen Daten ohne auf geteilte Variable zurückzugreifen
+- Synchronisation: _nur_eine_ goroutine kann gleichzeitig senden oder empfangen
+
+*Format:*
+
+ var name chan datentyp
+
+- überträgt nur Daten vom Typ _datentyp_ *aber:* alle Datentypen erlaubt, _auch_channels_
+- funktioniert nach FIFO-Prinzip
+
+*Senden*
+
+ kanal <- nachricht
+
+*Empfangen*
+ 
+ variable = <- kanal
+
+* Syntax und Semantik - channels und goroutines - Beispiel
+
+*TODO:* Code-Beispiel zur channels und goroutines
+
+* Anwendungsbeispiele
+
+* Anwendungsbeispiele - Firmen, die Go nutzen
+
+* Anwendungsbeispiele - Docker
+
+.image resources/docker_logo.png
+
+- open-source-Programm zur Erstellung von Software-Containers
+- verpackt eine Applikation samt allen Abhängigkeiten in einen virtuellen Container, der auf jedem Linux-Server laufen kann
+- ähnlich einer virtuellen Machine, aber leichtgewichtiger und einfacher
+
+* Anwendungsbeispiele - Docker
+
+*TODO:* Schema von Docker-Einsatz
+
+* Anwendungsbeispiele - Diese Präsentation
+
+*TODO*
+
+* Bewertung
+
+* Bewertung - Vorteile
+
+_Für_unerfahrene_Programmierer:_
+- leicht zu lernen
+- kleiner Sprachumfang
+- Garbage Collection
+- Laufzeitumgebung und Scheduler, die geteilten Ressourcen verwalten
+
+_Für_erfahrene_Programmierer:_
+- prozedural oder objektorientiert einsetzbar
+- gute Unterstützung für Netzwerkkommunikation
+- goroutines und channels für paralleles Programmieren
+- Bibliotheken für hardwarenahes Programmieren
+
+_Für_Alle:_
+- sehr schnelle Kompiliergeschwindigkeit
+- schnelle Ausführung
+- cross-compiling
+- UTF-8
+
+* Bewertung - Nachteile
+
+*TODO*
+
+* Bewertung - persönliche Meinung
+
+- Go ist cool
+
+* Ausblick
+
+*TODO*
+
+* Fragen?
