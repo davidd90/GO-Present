@@ -47,11 +47,53 @@ Ziele für die Sprache:
 
 * Syntax und Semantik - UTF-8
 
-*TODO*
+- erste Sprache mit voller Unterstützung für Unicode (UTF-8) Zeichenkodierung
+- Sonderzeichen sowohl in Kommentaren, als auch im Code erlaubt
+
+*Beispiel*
+
+.play code/utf8.go
+
 
 * Syntax und Semantik - Variablen
 
-*TODO*
+Variablendeklaration sieht wie folgt aus:
+
+	var name typ
+
+- jede Variable wird mit dem _Nullwert_ initialisiert
+- Namen werden in _camelCasing_ geschrieben
+- exportierte Variablen fangen mit einem _Großbuschstaben_ an
+- Deklarationen mehrerer Variablen können zu Blöcken zusammengefasst werden
+
+*Beispiel*
+
+ var (
+ 	a int
+ 	b int
+ 	str string
+ )
+
+* Syntax und Semantik - Variablen
+
+- Typ der Variablen kann vom Go-Compiler _selbst_herausgefunden_ werden
+- gleichzeitige Deklaration + Wertzuweisung mit dem Zeichen :=
+
+*Beispiel*
+
+ var a int = 15		var a := 15
+
+- Typangabe auch nicht nötig
+- *Aber:* nur innerhalb von Funktionen erlaubt
+
+_Konstanten_
+
+- fangen mit Schlüsselwort _const_ an
+- nur vom Typ _bool_,_numerisch_ oder _string_
+
+*Beispiel*
+
+ const a string = "I am a constant..."
 
 * Syntax und Semantik - Datentypen
 
@@ -65,15 +107,51 @@ Ziele für die Sprache:
 
 *TODO*
 
-* Syntax und Semantik - SliceSemikolonss
+* Syntax und Semantik - Slices
 
 *TODO*
 
 * Syntax und Semantik - Structs
 
-*TODO*
+- _benutzerdefinierte_ Typen
+- Struct besitzt mehrere _Attribute_ (Felder) mit Typ und Wert, die ihn beschreiben
+- eine Implementierung vom _ADT-Modell_ (Abstract Data Type)
+
+ type name struct {
+    feld1 typ1
+    feld2 typ2
+    …
+ }
+
+- Felder vom _beliebigen_Typ_, auch wieder Structs
+- Speicher für einen neuen Struct wird mit Schlüsselwort _new_ reserviert
+
+*Beispiel*
+
+ t *T = new (T)
+ t := new(T)
+
+* Syntax und Semantik - Structs
+
+*TODO*: Code-Beispiel
 
 * Syntax und Semantik - Zeiger
 
 *TODO*
+
+* Syntax und Semantik - Funktionen
+
+*TODO*
+
+* Syntax und Semantik - Kontrollstrukturen - If-Anweisung
+
+*TODO*
+
+* Syntax und Semantik - Kontrollstrukturen - Schleifen
+
+*TODO*
+
+* Syntax und Semantik - Channels und goroutines
+
+_"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."_
 
