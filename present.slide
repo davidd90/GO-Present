@@ -7,15 +7,13 @@ Michal Ajchman
 
 * Gliederung
 
-1. Geschichte
-2. Syntax und Semantik
- 2.1 Datentypen
- 2.2 Wichtigste Paradigmen
- 2.3 Vergleich mit C
-3. Anwendungsbeispiele
-4. Verbreitung
-5. Bewertung
-6. Ausblick
+- Geschichte
+- Syntax und Semantik
+- Vergleich mit C
+- Anwendungsbeispiele
+- Verbreitung
+- Bewertung
+- Ausblick
 
 * Geschichte von Go
 
@@ -26,18 +24,56 @@ Michal Ajchman
 Go enstand aus der Frust über aktuell benutzte Sprachen zur Systemprogrammierung
 
 Die Hauptsächlichen Problemen:
+
 - C und C++ sind _veraltet_
-- in den letzten 10 Jahren _keine_andere_Sprache für Systementwicklung
+- in den letzten 10 Jahren _keine_andere_Sprache_ für Systementwicklung
 
 *Lösung:* eine neue Sprache soll entwickelt werden
 
-Sie soll:
+Ziele für die Sprache:
+
 - schnell in der Ausführung und Kompilierung
 - einfach
 - hardwarenah
-- moderne Konzepte unterstützen
+- Unterstützung moderner Konzepte
 
-* Sytax und Semantik
+* Syntax und Semantik - Einführung
+
+*TODO*
+
+* Syntax und Semantik - Semikolons
+
+*TODO*
+
+* Syntax und Semantik - UTF-8
+
+*TODO*
+
+* Syntax und Semantik - Variablen
+
+*TODO*
+
+* Syntax und Semantik - Datentypen
+
+*TODO*
+
+* Syntax und Semantik - primitive Datentypen
+
+*TODO*
+
+* Syntax und Semantik - Arrays
+
+*TODO*
+
+* Syntax und Semantik - SliceSemikolonss
+
+*TODO*
+
+* Syntax und Semantik - Structs
+
+*TODO*
+
+* Syntax und Semantik - Zeiger
 
 *TODO*
 
