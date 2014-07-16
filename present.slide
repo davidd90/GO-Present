@@ -104,16 +104,65 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - primitive Datentypen
 
-*TODO*
+*numerische Datentypen*
+
+
+ Typen			    Bit-Tiefe
+
+ int <x>		  	8,16,32,64
+
+ uint <x>			 8,16,32,64
+
+ float<x>			 32,64
+
+ complex <x>		  64,128
+
+ 
+ 
+
+
+*andere primitive Datentypen*
+
+- string (read only)
+- bool
+- byte
+- rune (UTF 8 character)
 
 * Syntax und Semantik - Arrays
 
-*TODO*
+- statische Groesse
+- Zugriff ueber Index
+
+ var text [5]string
+
+ text[0]= "Hello"
+ text[1]= "World"
+
+
 
 * Syntax und Semantik - Slices
 
-*TODO*
+- Bereich innerhalb eines Arrays
 
+ 
+ var slice []byte = buffer[100:150] //komplette Variablendeklaration
+ var slice = buffer[100:150]        // implizite Deklaration
+
+- interne Struktur:
+
+
+ type sliceHeader struct {
+    Capacity int
+    Length int
+    ZerothElement *byte
+ }
+
+ slice := sliceHeader{
+    Capacity:     256
+    Length:        50,
+    ZerothElement: &buffer[100],
+ }
+ 
 * Syntax und Semantik - Structs
 
 - _benutzerdefinierte_ Typen
@@ -140,7 +189,16 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - Zeiger
 
-*TODO*
+- aus C uebernommen
+
+ func zero(xPtr *int) {
+    *xPtr = 0
+ }
+ func main() {
+    x := 5
+    zero(&x)
+    fmt.Println(x) // x is 0
+ }
 
 * Syntax und Semantik - Funktionen
 
