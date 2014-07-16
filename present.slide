@@ -189,14 +189,7 @@ Variablendeklaration sieht wie folgt aus:
 - * = Typdeklaration & Dereferenzierung
 - & = Adresse einer Variable
 
- func zero(xPtr *int) {
-    *xPtr = 0
- }
- func main() {
-    x := 5
-    zero(&x)
-    fmt.Println(x) // x is 0
- }
+.play code/pointer.go
 
 * Syntax und Semantik - Funktionen
 
@@ -229,7 +222,7 @@ Variablendeklaration sieht wie folgt aus:
 - structs können im gesamten Modul benutzt werden
 - structs mit grossem Anfangsbuchstaben auch ausserhalb
 
- Vererbung
+* Vererbung
 
 .play code/vererbung.go
 
