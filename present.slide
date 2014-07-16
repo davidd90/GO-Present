@@ -325,9 +325,10 @@ _"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."
 
 .image resources/docker_anwendung.png 576 768
 
-* Anwendungsbeispiele - Diese Präsentation
+* Anwendungsbeispiele - Go-Present
 
-- einfache HTTP POST requests mittels Javascript
+- HTML & JavaSkript basierende Präsentation
+- Code als einfache HTTP POST requests an Server
 .code code/requestcode.txt
 - server kompiliert und führt code aus
 - sendet Output an Client websocket
@@ -383,6 +384,9 @@ _Für_Alle:_
 
 * Ausblick
 
-*TODO*
+- stetige Weiterentwicklung, da Opensource
+- Standardtbibliothek wird weiter wachsen
+- steigende Nachfrage in der Industry
+
 
 * Fragen?
