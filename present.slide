@@ -190,6 +190,8 @@ Variablendeklaration sieht wie folgt aus:
 * Syntax und Semantik - Zeiger
 
 - aus C uebernommen
+- * = Typdeklaration & Dereferenzierung
+- & = Adresse einer Variable
 
  func zero(xPtr *int) {
     *xPtr = 0
@@ -201,6 +203,9 @@ Variablendeklaration sieht wie folgt aus:
  }
 
 * Syntax und Semantik - Funktionen
+
+- keinen, einen oder mehrere Rückgabewerte
+- können einem Typen zugeordnet werden
 
 .code code/function.go
 
