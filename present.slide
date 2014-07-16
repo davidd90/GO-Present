@@ -40,10 +40,6 @@ Ziele für die Sprache:
 
 * Syntax und Semantik
 
-* Syntax und Semantik - Einführung
-
-*TODO*
-
 * Syntax und Semantik - Semikolons
 
 - nicht notwendig
@@ -185,7 +181,7 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - Structs
 
-*TODO*: Code-Beispiel
+.play code/structs.go
 
 * Syntax und Semantik - Zeiger
 
@@ -299,7 +295,7 @@ _"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."
 
 * Syntax und Semantik - channels und goroutines - Beispiel
 
-*TODO:* Code-Beispiel zur channels und goroutines
+.play code/pinger.go /START OMIT/,/END OMIT/
 
 * Anwendungsbeispiele
 
@@ -380,7 +376,7 @@ _Für_Alle:_
 
 * Bewertung - persönliche Meinung
 
-- Go ist toll
+Go ist toll
 
 * Ausblick
 
@@ -390,3 +386,11 @@ _Für_Alle:_
 
 
 * Fragen?
+
+* Danke
+
+David Damm
+
+Michal Ajchman
+
+.image resources/gopher.png
