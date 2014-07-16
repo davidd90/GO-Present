@@ -9,7 +9,6 @@ Michal Ajchman
 
 - Geschichte
 - Syntax und Semantik
-- Vergleich mit C
 - Anwendungsbeispiele
 - Verbreitung
 - Bewertung
@@ -222,10 +221,11 @@ _"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."
 - open-source-Programm zur Erstellung von Software-Containers
 - verpackt eine Applikation samt allen Abhängigkeiten in einen virtuellen Container, der auf jedem Linux-Server laufen kann
 - ähnlich einer virtuellen Machine, aber leichtgewichtiger und einfacher
+- in Go entwickelt
 
 * Anwendungsbeispiele - Docker
 
-*TODO:* Schema von Docker-Einsatz
+.image resources/docker_anwendung.png 576 768
 
 * Anwendungsbeispiele - Diese Präsentation
 
@@ -259,7 +259,7 @@ _Für_Alle:_
 
 * Bewertung - persönliche Meinung
 
-- Go ist cool
+- Go ist toll
 
 * Ausblick
 
