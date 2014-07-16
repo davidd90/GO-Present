@@ -43,7 +43,7 @@ Ziele für die Sprache:
 * Syntax und Semantik - Semikolons
 
 - nicht notwendig
-- optional um Ausdrücke zu trennen
+- optional um Ausdrücke oder Anweisungen zu trennen
 
 .play code/semikolon.go
 
@@ -126,8 +126,8 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - Arrays
 
-- statische Groesse
-- Zugriff ueber Index
+- statische Grösse
+- Zugriff über Index
 
  var text [5]string
 
@@ -185,7 +185,7 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - Zeiger
 
-- aus C uebernommen
+- aus C übernommen
 - * = Typdeklaration & Dereferenzierung
 - & = Adresse einer Variable
 
