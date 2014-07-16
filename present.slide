@@ -101,9 +101,6 @@ Variablendeklaration sieht wie folgt aus:
 
  const a string = "I am a constant..."
 
-* Syntax und Semantik - Datentypen
-
-*TODO*
 
 * Syntax und Semantik - primitive Datentypen
 
@@ -148,8 +145,8 @@ Variablendeklaration sieht wie folgt aus:
 - Bereich innerhalb eines Arrays
 
  
- var slice []byte = buffer[100:150] //komplette Variablendeklaration
- var slice = buffer[100:150]        // implizite Deklaration
+ var slice []byte = buffer[100:150] // komplette Variablendeklaration
+ var slice = buffer[100:150]        // implizite Variablendeklaration
 
 - interne Struktur:
 
