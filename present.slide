@@ -1,4 +1,4 @@
-Die Programmiersprache Go
+﻿Die Programmiersprache Go
 17 Juli 2014
 
 David Damm
@@ -46,7 +46,10 @@ Ziele für die Sprache:
 
 * Syntax und Semantik - Semikolons
 
-*TODO*
+- nicht notwendig
+- optional um Ausdrücke zu trennen
+
+.play code/semikolon.go
 
 * Syntax und Semantik - UTF-8
 
@@ -98,14 +101,10 @@ Variablendeklaration sieht wie folgt aus:
 
  const a string = "I am a constant..."
 
-* Syntax und Semantik - Datentypen
-
-*TODO*
 
 * Syntax und Semantik - primitive Datentypen
 
-*numerische Datentypen*
-
+*Numerische*Datentypen*
 
  Typen			    Bit-Tiefe
 
@@ -121,17 +120,18 @@ Variablendeklaration sieht wie folgt aus:
  
 
 
-*andere primitive Datentypen*
+*andere*primitive*Datentypen*
 
 - string (read only)
 - bool
 - byte
 - rune (UTF 8 character)
 
+
 * Syntax und Semantik - Arrays
 
-- statische Groesse
-- Zugriff ueber Index
+- statische Grösse
+- Zugriff über Index
 
  var text [5]string
 
@@ -145,8 +145,8 @@ Variablendeklaration sieht wie folgt aus:
 - Bereich innerhalb eines Arrays
 
  
- var slice []byte = buffer[100:150] //komplette Variablendeklaration
- var slice = buffer[100:150]        // implizite Deklaration
+ var slice []byte = buffer[100:150] // komplette Variablendeklaration
+ var slice = buffer[100:150]        // implizite Variablendeklaration
 
 - interne Struktur:
 
@@ -189,7 +189,9 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - Zeiger
 
-- aus C uebernommen
+- aus C übernommen
+- * = Typdeklaration & Dereferenzierung
+- & = Adresse einer Variable
 
  func zero(xPtr *int) {
     *xPtr = 0
@@ -202,15 +204,53 @@ Variablendeklaration sieht wie folgt aus:
 
 * Syntax und Semantik - Funktionen
 
-*TODO*
+- keinen, einen oder mehrere Rückgabewerte
+- können einem Typen zugeordnet werden
+
+.code code/function.go
 
 * Syntax und Semantik - Kontrollstrukturen - If-Anweisung
 
-*TODO*
+.code code/if_code.go
 
 * Syntax und Semantik - Kontrollstrukturen - Schleifen
 
-*TODO*
+- nur for-Schleifen
+
+.code code/loop.go
+
+* Syntax und Semantik - Objectorientierung in Go
+
+- keine Klassen und keine Vererbung
+- objektorientierte als auch funktionale Elemente
+
+.play code/rechteck.go
+
+
+
+* Syntax und Semantik - Kapselung
+
+- structs können im gesamten Modul benutzt werden
+- structs mit grossem Anfangsbuchstaben auch ausserhalb
+
+ Vererbung
+
+.play code/vererbung.go
+
+* Syntax und Semantik - Mehrfachvererbung
+
+.code code/mehrfachvererbung.go
+
+* Syntax und Semantik - Interfaces
+
+- bestehen aus Liste von Funktionen
+ 
+.code code/interface_1.go
+
+- Implementierung wird nicht explizit angegeben
+
+ 
+.code code/interface_2.go
 
 * Syntax und Semantik - channels und goroutines
 
@@ -270,7 +310,14 @@ _"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."
 
 * Anwendungsbeispiele
 
+
 * Anwendungsbeispiele - Firmen, die Go nutzen
+
+.image resources/Dropbox.png _ 100 
+.image resources/Google.png _ 200
+.image resources/apple.jpg _ 200
+.image resources/intel.jpg _ 200
+
 
 * Anwendungsbeispiele - Docker
 
@@ -288,6 +335,16 @@ _"Do_not_communicate_by_sharing_memory._Instead,_share_memory_by_communicating."
 * Anwendungsbeispiele - Diese Präsentation
 
 *TODO*
+
+* Verbreitung
+
+* Verbreitung - RedMonk
+
+.image resources/redmonk-rank.png _ 900
+
+* Verbreitung - Tiobe
+
+.image resources/tiobe.png _ 800
 
 * Bewertung
 
@@ -313,7 +370,11 @@ _Für_Alle:_
 
 * Bewertung - Nachteile
 
-*TODO*
+- recht neue Programmiersprache
+- Dokumentation und einige technische Aspekte noch mangelhaft
+- keine generics
+- geringe Auswahl an Datenstrukturen
+
 
 * Bewertung - persönliche Meinung
 
