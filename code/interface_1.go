@@ -1,0 +1,4 @@
+ type Form interface{
+	flaeche()
+	...
+ }
