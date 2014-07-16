@@ -46,7 +46,10 @@ Ziele für die Sprache:
 
 * Syntax und Semantik - Semikolons
 
-*TODO*
+- nicht notwendig
+- optional um Ausdrücke zu trennen
+
+.play code/semikolon.go
 
 * Syntax und Semantik - UTF-8
 
