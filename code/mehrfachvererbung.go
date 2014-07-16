@@ -1,3 +1,8 @@
+package main
+
+import "fmt"
+
+// START OMIT
 type A struct {
     a int
     x int
@@ -20,4 +25,6 @@ func main() {
 
     c.A.x = 4   // keine Kurzschreibweise möglich
     c.B.x = 5   // keine Kurzschreibweise möglich
+    fmt.Println(c)
 }
+// END OMIT
