@@ -18,7 +18,17 @@ Michal Ajchman
 
 * Geschichte von Go
 
-*TODO*
+- Entwicklungsphase startet September 2007
+- 20-Prozent-Projekt von 3 Software-Ingenieuren von Google Inc
+- Robert Griesemer, Rob Pike und Ken Thompson
+- Entwicklung des Compilers startet Anfang 2008
+- erstmal nur C-Code generiert
+- Mitte 2008 Entwurf abgeschlossen -> Implementierung
+- Ian Lance Taylor und Russ Cox treten Team bei und unterstützen
+- November 2009 wird Go als Opensource veröffentlicht
+- seit Mai 2010 als Backend System bei Google
+
+
 
 * Wieso eine neue Sprache?
 
